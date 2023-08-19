@@ -71,7 +71,7 @@ function AttackFunction()
 	local ac = CombatFrameworkR.activeController
 	if ac and ac.equipped then
 		for indexincrement = 1, 1 do
-			local bladehit = getAllBladeHits(60)
+			local bladehit = getAllBladeHits(0)
 			if #bladehit > 0 then
 				local AcAttack8 = debug.getupvalue(ac.attack, 5)
 				local AcAttack9 = debug.getupvalue(ac.attack, 6)
